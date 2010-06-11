@@ -1,0 +1,28 @@
+<h1>Listing visits</h1>
+
+<table>
+  <tr>
+    <th>Dogpark</th>
+    <th>Date</th>
+    <th>Arrival time</th>
+    <th>Duration</th>
+    <th>Dog size</th>
+  </tr>
+
+<% @visits.each do |visit| %>
+  <tr>
+    <td><%=h visit.dogpark_id %></td>
+    <td><%=h visit.date %></td>
+    <td><%=h visit.arrival_time %></td>
+    <td><%=h visit.duration %></td>
+    <td><%=h visit.dog_size %></td>
+    <td><%= link_to 'Show', visit %></td>
+    <td><%= link_to 'Edit', edit_visit_path(visit) %></td>
+    <td><%= link_to 'Destroy', visit, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New visit', new_visit_path %>

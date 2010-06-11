@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  dogpark_id: 1
+  date: 2010-06-11
+  arrival_time: 2010-06-11 00:41:43
+  duration: 1
+  dog_size: 1
+
+two:
+  dogpark_id: 1
+  date: 2010-06-11
+  arrival_time: 2010-06-11 00:41:43
+  duration: 1
+  dog_size: 1

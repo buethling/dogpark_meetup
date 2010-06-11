@@ -1,0 +1,28 @@
+<p>
+  <b>Dogpark:</b>
+  <%=h @visit.dogpark_id %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @visit.date %>
+</p>
+
+<p>
+  <b>Arrival time:</b>
+  <%=h @visit.arrival_time %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%=h @visit.duration %>
+</p>
+
+<p>
+  <b>Dog size:</b>
+  <%=h @visit.dog_size %>
+</p>
+
+
+<%= link_to 'Edit', edit_visit_path(@visit) %> |
+<%= link_to 'Back', visits_path %>

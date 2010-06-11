@@ -1,0 +1,26 @@
+<h1>Listing dogparks</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>State</th>
+    <th>City</th>
+    <th>Zip</th>
+  </tr>
+
+<% @dogparks.each do |dogpark| %>
+  <tr>
+    <td><%=h dogpark.name %></td>
+    <td><%=h dogpark.state %></td>
+    <td><%=h dogpark.city %></td>
+    <td><%=h dogpark.zip %></td>
+    <td><%= link_to 'Show', dogpark %></td>
+    <td><%= link_to 'Edit', edit_dogpark_path(dogpark) %></td>
+    <td><%= link_to 'Destroy', dogpark, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New dogpark', new_dogpark_path %>

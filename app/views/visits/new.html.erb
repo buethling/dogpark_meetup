@@ -1,0 +1,31 @@
+<h1>New visit</h1>
+
+<% form_for(@visit) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :dogpark_id %><br />
+    <%= f.text_field :dogpark_id %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label :arrival_time %><br />
+    <%= f.time_select :arrival_time %>
+  </p>
+  <p>
+    <%= f.label :duration %><br />
+    <%= f.text_field :duration %>
+  </p>
+  <p>
+    <%= f.label :dog_size %><br />
+    <%= f.text_field :dog_size %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', visits_path %>

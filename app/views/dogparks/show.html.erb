@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @dogpark.name %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @dogpark.state %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @dogpark.city %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%=h @dogpark.zip %>
+</p>
+
+
+<%= link_to 'Edit', edit_dogpark_path(@dogpark) %> |
+<%= link_to 'Back', dogparks_path %>
